@@ -1,0 +1,47 @@
+footer{}
+//====================================================================================================
+.footer {
+	&__body {
+		height: 125px;
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+		@media (max-width:600px){
+			display: block;
+			height: auto;
+			text-align: center;
+			padding: 20px 0;
+		}
+	}
+	&__column {
+		&:last-child{
+			text-align: right;
+			@media (max-width:$md3+px){
+				text-align: center;
+			}
+		}
+	}
+	&__copy {
+		color: #646667;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	&__link {
+		color: #646667;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: inline-block;
+		margin: 0px 0px 0px 30px;
+		&:hover{text-decoration: underline;}
+		@media (max-width:$md3+px){
+			margin: 15px 10px 0px 10px;
+		}
+	}
+}
+
+//====================================================================================================
+
